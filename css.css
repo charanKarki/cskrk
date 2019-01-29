@@ -1,0 +1,378 @@
+body {
+    background: rgb(201, 200, 200);
+}
+
+.container {
+    width: 100%;
+}
+
+.heading {
+    font-size: 2.5vw;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.para {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.2em;
+    font-size: 20px;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    background-color: rgba(20, 214, 166, 0.877);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 200;
+    color: aliceblue;
+}
+
+/* end globle classes */
+
+header {
+    width: 100%;
+    height: 40vw;
+    background-image: url("./img/img_137.jpg");
+    background-size: 100%;
+    text-align: center;
+}
+
+header .header-content {
+    padding-top: 20vw;
+}
+
+header .header-content h1 {
+    font-size: 40px;
+    font-weight: 300;
+    color: rgb(23, 196, 202);
+}
+
+header .header-content p {
+    color: rgb(23, 97, 172);
+    padding-left: 40px;
+}
+
+nav {
+    background-color: #00bcd4;
+    height: 50px;
+}
+
+#navbar {
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar .navbar-brand {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    float: left;
+    font-weight: 200;
+    padding-top: 10px;
+    text-transform: uppercase;
+    margin-left: 2vw;
+}
+
+#navbar .navbar-brand:hover {
+    animation-name: fade;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+#navbar #navBtn {
+    display: none;
+}
+
+@keyframes fade {
+    form {
+        color: white;
+    }
+    to {
+        color: #212121;
+    }
+}
+
+.navItems {
+    padding-top: 15px;
+}
+
+.navItems a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #353434;
+}
+
+.navItems li {
+    list-style: none;
+    font-size: 1.5vw;
+    float: right;
+    margin-right: 20px;
+}
+
+.navItems a:hover {
+    color: #0c0c0c;
+}
+
+#imgContainer {
+    height: 400px;
+    background-image: url("./img/imageContainer.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(233, 233, 233);
+    position: relative;
+}
+
+#imgContainer .para {
+    padding-top: 5%;
+    width: 100%;
+    margin: auto;
+}
+
+#imgContainer .para::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #8360c3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.5;
+    position: absolute;
+}
+
+#boxes {
+    margin: 100px auto 50px auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#boxes img {
+    max-width: 30%;
+}
+
+#boxes .box {
+    background: #f11149ef;
+    border-radius: 10px;
+}
+
+hr {
+    border: 1px solid rgb(238, 238, 238);
+}
+
+#meetupContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#meetupContainer img {
+    width: 100%;
+    /* position: relative; */
+}
+
+#imageContent .heading {
+    font-size: 3vw;
+    text-align: center;
+}
+
+#imageContent .para {
+    font-size: 1.5vw;
+}
+
+#imageContent {
+    /* position: absolute; */
+    /* left: 40%; */
+    padding: 20px 5px 5px 5px;
+    background: rgb(241, 40, 107);
+    border-radius: 10px;
+}
+
+#imageContent #lernbtn {
+    font-size: 1.5vw;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#formContainer {
+    margin-top: 50px;
+    width: auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #b1c9c6;
+    background-size: 100%;
+}
+
+#formContainer .heading {
+    color: rgb(51, 51, 51);
+}
+
+input {
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+}
+
+#form {
+    margin: auto;
+}
+
+#form #email {
+    width: 40%;
+    font-size: 20px;
+    background: rgb(216, 216, 216);
+    padding-left: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    height: 100px;
+    background: #667db6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient( to right, #667db6, #0082c8, #0082c8, #667db6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+}
+
+footer .heading {
+    letter-spacing: 5px;
+    position: relative;
+}
+
+footer .heading::after {
+    content: "";
+    border: 0.5px solid #2c2c2ce3;
+    width: 30%;
+    position: absolute;
+    top: 30px;
+    left: 35%;
+}
+
+.social-media {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    list-style: none;
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 780px) {
+    /* global classes */
+    .heading {
+        font-size: 4vw;
+        text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .para {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1em;
+        font-size: 3.2vw;
+        font-style: normal;
+    }
+    .btn {
+        background-color: rgba(20, 214, 149, 0.877);
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 200;
+        color: aliceblue;
+    }
+    /* header in tablate devices */
+    header {
+        height: 300px;
+    }
+    header .para {
+        font-size: 2.5vw;
+    }
+    #navbar {
+        height: 40px;
+    }
+    #navbar .navItems {
+        font-size: 2vw;
+    }
+    #imgContainer {
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    /* header in tablate devices */
+    header {
+        height: 44vw;
+    }
+    header .heading {
+        font-size: 2vw;
+    }
+    header .para {
+        display: none;
+    }
+    #navbar .navbar-brand {
+        font-size: 4vw;
+    }
+    #navbar {
+        height: 40px;
+    }
+    #navbar #navBtn {
+        display: block;
+        float: right;
+        font-size: 4vw;
+        color: #3a3b3b;
+        margin-right: 5px;
+    }
+    #navbar #navBtn:hover .navItems {
+        display: block;
+    }
+    #navbar ul.navItems li {
+        display: none;
+        font-size: 5vw;
+    }
+    #imgContainer {
+        height: 50vw;
+    }
+    #boxes {
+        grid-template-columns: 100%;
+        grid-template-rows: 50vw 50vw 50vw;
+    }
+    #boxes .box {
+        margin-top: 30px;
+        border-radius: 0px;
+    }
+    #form #email {
+        font-size: 3vw;
+        width: 40%;
+        height: 8vw;
+    }
+    #form #submitbtn {
+        font-size: 3vw;
+        height: 8vw;
+    }
+    footer .social-media {
+        font-size: 3vw;
+    }
+}
